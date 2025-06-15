@@ -1,22 +1,27 @@
 # QA Automation Portfolio
 
-This repository contains automation scripts for learning and demonstrating QA testing skills using Python.
+A growing collection of hands-on test automation projects to help me transition from manual QA to automation testing.
 
-## 📌 Phases
+## Description
 
-- Web automation with Selenium
-- API testing with Requests
-- Load testing with Locust
-- CI/CD with GitHub Actions
+This project is part of my personal learning journey to become a skilled QA Automation Engineer. It includes small Python-based scripts, test cases, and experiments involving unit testing, API testing, and more.
 
-## 🛠️ Setup
+Each file or folder demonstrates a specific concept, and over time this will evolve into a professional-grade automation portfolio.
+
+## Technologies Used
+
+- Python 3.12
+- Git & GitHub
+- Pylint (code linter)
+- VS Code
+
+Upcoming:
+- pytest (unit testing)
+- requests (for API testing)
+- Selenium (for UI automation)
+- Locust (for load testing)
+
+## How to Run
 
 ```bash
-pip install -r requirements.txt
-```
-
-## 🚀 Run Your First Script
-
-```bash
-python hello_qa.py
-```
+python basics_practice.py
