@@ -2,7 +2,7 @@
 API tests using requests and pytest.
 Tests include GET, POST, PUT, DELETE requests.
 """
-
+import responses
 import requests
 
 def test_get_users():
@@ -59,3 +59,20 @@ def test_get_with_auth():
     }
     response = requests.get(url, headers=headers, timeout=10)
     assert response.status_code == 200
+
+@responses.activate
+def test_mocked_get():
+    """Test GET request with mocked response."""
+    test_url = "https://api.example.com/data"
+    responses.add(
+        responses.GET,
+        test_url,
+        json={"key": "value"},
+        status=200
+    )
+
+    response = requests.get(test_url, timeout=10)
+
+    assert response.status_code == 200
+    data = response.json()
+    assert data["key"] == "value"
