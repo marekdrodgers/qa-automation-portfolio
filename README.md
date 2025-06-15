@@ -9,6 +9,7 @@ This repository is my QA Automation portfolio where I practice and demonstrate s
 - Load testing basics with Locust and analysis of results
 - Writing clean, documented, and maintainable test code following PEP 8 standards
 - Managing code with Git, including commits and pushing to GitHub
+- UI test automation with Selenium WebDriver including page object models and robust waits
 
 ## Progress so far
 - Set up Python environment with virtualenv and pylint
@@ -17,12 +18,20 @@ This repository is my QA Automation portfolio where I practice and demonstrate s
 - Performed load testing and documented results with markdown and charts
 - Applied coding standards including module and function docstrings
 - Learned basic git workflow: staging, committing, pushing, and branching
+- Added Selenium-based UI tests for DuckDuckGo search:
+  - Used Page Object Model (POM) for maintainable UI tests
+  - Implemented explicit waits and expected conditions for reliability
+  - Handled element click interception issues with ActionChains and scrolling
+  - Parameterized tests using pytest.mark.parametrize for varied inputs
+  - Configured WebDriver setup/teardown using pytest fixtures in `conftest.py`
+- Added additional test example for Google Search UI automation
 
 ## Next steps
 - Add authenticated API testing
-- Explore UI test automation with Selenium or Playwright
-- Deepen load testing and performance analysis
-- Build a test framework and continuous integration pipeline
+- Deepen UI test automation skills (e.g., Playwright, Cypress)
+- Expand test coverage and robustness for UI tests
+- Build a full test framework and integrate continuous integration pipelines
+- Explore parallel test execution and reporting tools
 
 ---
 
