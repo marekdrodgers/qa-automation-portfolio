@@ -1,27 +1,33 @@
 # QA Automation Portfolio
 
-A growing collection of hands-on test automation projects to help me transition from manual QA to automation testing.
+## Overview
+This repository is my QA Automation portfolio where I practice and demonstrate skills including:
 
-## Description
+- Manual and automated testing fundamentals
+- Python scripting and test automation with pytest
+- API testing (basic GET requests and mocking)
+- Load testing basics with Locust and analysis of results
+- Writing clean, documented, and maintainable test code following PEP 8 standards
+- Managing code with Git, including commits and pushing to GitHub
 
-This project is part of my personal learning journey to become a skilled QA Automation Engineer. It includes small Python-based scripts, test cases, and experiments involving unit testing, API testing, and more.
+## Progress so far
+- Set up Python environment with virtualenv and pylint
+- Created reusable test functions and modular code in `/src` and `/tests`
+- Implemented API tests with live endpoints and mocked responses
+- Performed load testing and documented results with markdown and charts
+- Applied coding standards including module and function docstrings
+- Learned basic git workflow: staging, committing, pushing, and branching
 
-Each file or folder demonstrates a specific concept, and over time this will evolve into a professional-grade automation portfolio.
+## Next steps
+- Add authenticated API testing
+- Explore UI test automation with Selenium or Playwright
+- Deepen load testing and performance analysis
+- Build a test framework and continuous integration pipeline
 
-## Technologies Used
+---
 
-- Python 3.12
-- Git & GitHub
-- Pylint (code linter)
-- VS Code
+Feel free to explore the code and tests in the `/src` and `/tests` directories.
 
-Upcoming:
-- pytest (unit testing)
-- requests (for API testing)
-- Selenium (for UI automation)
-- Locust (for load testing)
+---
 
-## How to Run
-
-```bash
-python basics_practice.py
+*Last updated: 2025-06-15*
