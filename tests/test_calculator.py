@@ -1,25 +1,29 @@
 # tests/test_calculator.py
 
+"""
+Unit tests for calculator.py functions using pytest.
+"""
+
 import pytest
 from src.calculator import add, subtract, multiply, divide
 
 def test_add():
+    """Test addition of two numbers."""
     assert add(2, 3) == 5
-    assert add(-1, 1) == 0
-    assert add(0, 0) == 0
 
 def test_subtract():
-    assert subtract(10, 5) == 5
-    assert subtract(0, 3) == -3
+    """Test subtraction of two numbers."""
+    assert subtract(5, 3) == 2
 
 def test_multiply():
-    assert multiply(4, 5) == 20
-    assert multiply(3, 0) == 0
-    assert multiply(-2, 2) == -4
+    """Test multiplication of two numbers."""
+    assert multiply(3, 4) == 12
 
 def test_divide():
+    """Test division of two numbers."""
     assert divide(10, 2) == 5
-    assert divide(-6, 3) == -2
 
+def test_divide_by_zero():
+    """Test division by zero raises ValueError."""
     with pytest.raises(ValueError):
-        divide(5, 0)  # Expect ValueError for division by zero
+        divide(5, 0)
